@@ -1,14 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Quotes App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
+<ion-content no-padding class="page-home">
+  <h3 align="center" class="wel">Welcome</h3>
+  <h5 text-center>Inspirational Corner</h5>
+  <img src="assets/imgs/u.jpg">
+  <hr>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  <marquee>Click to Read more ......  </marquee>
   </p>
+
+  <button ion-button (click)="inspiration()" block ion-icon="heart"> INSPIRATIONAL QUOTES </button>
+  <button ion-button (click)="GMind()" block> GREAT MINDS QUOTES </button>
+  <button ion-button (click)="lQuotes()" block> LOVELY QUOTES </button>
+  <button ion-button (click)="eQuotes()" block> EDUCATIVE QUOTES </button>
+
+  <footer float-down text-center>
+    <p>Copyright @2018 - SF21</p>
+
+  </footer>
 </ion-content>
